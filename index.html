@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>To do list</title>
+
+    
+</head>
+<body>
+    <header>
+        <h1>Onganies Todo List</h1>
+    </header>
+    <form>
+        
+            <input type="text" class="todo-input" placeholder="enter your task">
+            <label for = "datestart">Start date:</label>
+            <input type="date" class="datestart" name="datestart">
+            <label for = "datestart">Due date:</label>
+            <input type= "date" class ="dateend">
+        
+        <button class="todo-button" type="submit">Add Todo</button>
+        
+    </form>
+    
+    
+    <div class="todo-container">
+    
+         <div class="tasks" >
+            <div class="box-sub">Tasks to do:</div>
+
+            <ul class="todo-list" draggable="true"></ul>
+
+         </div>
+        
+        <div class="tasks">
+			<div class="box-sub">In progress</div>
+			
+		</div>
+		<div class="tasks">
+			<div class="box-sub">Completed</div>
+			</div>
+	</div>
+    
+    <script src="main.js" defer></script>  
+</body>
+</html>
