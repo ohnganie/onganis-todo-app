@@ -57,7 +57,20 @@ const trashButton = document.createElement('button');
     trashButton.innerHTML ='<i class="fas fa-trash-alt"></i>' ;
     trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
- 
+    //edit button
+    const editButton = document.createElement('button');
+    editButton.innerHTML = '<i class="far fa-edit"></i>';
+    editButton.classList.add("edit-btn");
+    editButton.onclick = function(){
+        editWorking(newTodo)
+    }
+    todoDiv.appendChild(editButton);
+    
+ //function dor edit 
+ function editWorking(e){
+     let editValue = prompt('edit the selected item',e.firstChild.nodeValue);
+     e.firstChild.nodeValue = editValue;
+ }
     
     //append to list
     todoList.appendChild(todoDiv);
